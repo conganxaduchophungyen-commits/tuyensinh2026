@@ -3,279 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuyển sinh Công an Nhân dân 2026 - Đức Hợp</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    
+    <title>Cổng Thông Tin Tuyển Sinh CAND 2026 - Đức Hợp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --ca-red: #cc0000;
-            --ca-gold: #ffcc00;
-            --ca-green: #2e4d2e;
-            --ca-light-green: #e8f5e9;
-            --text-dark: #333;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            color: var(--text-dark);
-            background-color: #f4f4f4;
-        }
-
-        /* Header & Hero Section */
-        header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://images.unsplash.com/photo-1590424744295-8664161c148e?q=80&w=2000') no-repeat center center/cover;
-            height: 60vh;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero-title {
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            color: var(--ca-gold);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        /* Main Content Container */
-        .container {
-            max-width: 1000px;
-            margin: -50px auto 50px;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: var(--ca-red);
-            border-bottom: 3px solid var(--ca-gold);
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
-
-        /* Methods Section */
-        .methods-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .method-card {
-            background: var(--ca-light-green);
-            padding: 20px;
-            border-left: 5px solid var(--ca-red);
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .method-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        /* Table Styling */
-        .table-container {
-            overflow-x: auto;
-            margin-top: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-        }
-
-        th {
-            background-color: var(--ca-green);
-            color: white;
-            padding: 12px;
-        }
-
-        td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-        }
-
-        tr:nth-child(even) { background-color: #f9f9f9; }
-
-        /* Infographic Stats */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            text-align: center;
-        }
-
-        .stat-item {
-            padding: 20px;
-            background: #fff;
-            border: 1px dashed var(--ca-red);
-            border-radius: 10px;
-        }
-
-        .stat-item i {
-            font-size: 2rem;
-            color: var(--ca-red);
-            margin-bottom: 10px;
-        }
-
-        /* Timeline / Contact */
-        .contact-box {
-            background: var(--ca-green);
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 40px;
-        }
-
-        .btn-call {
-            display: inline-block;
-            background: var(--ca-gold);
-            color: #000;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-title { font-size: 1.8rem; }
-            .container { padding: 20px; margin-top: -20px; }
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700;800&display=swap');
+        body { font-family: 'Lexend', sans-serif; background-color: #fffaf0; }
+        .bg-police-red { background-color: #d90429; }
+        .bg-police-blue { background-color: #003566; }
+        .text-accent-yellow { color: #ffc300; }
+        .border-dash { border: 2px dashed #d90429; }
+        .method-card { transition: all 0.3s ease; cursor: pointer; }
+        .method-card:hover { transform: scale(1.02); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
     </style>
 </head>
-<body>
+<body class="text-slate-900">
 
-<header>
-    <div class="animate__animated animate__fadeInDown">
-        <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a1/Logo_B%E1%BB%99_C%C3%B4ng_an.svg/1200px-Logo_B%E1%BB%99_C%C3%B4ng_an.svg.png" alt="Logo Bộ Công an" width="100">
-        <h1 class="hero-title">Tuyển sinh CAND 2026</h1>
-        <p style="font-size: 1.2rem;">CÔNG AN XÃ ĐỨC HỢP - HUYỆN KIM ĐỘNG - TỈNH HƯNG YÊN [cite: 1, 4]</p>
-    </div>
-</header>
+    <header class="bg-police-blue text-white py-20 px-6 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-2 bg-yellow-400"></div>
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight uppercase">
+                Tuyển Sinh Công An <br class="hidden md:block"> Nhân Dân 2026
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-accent-yellow mb-8 uppercase tracking-widest">
+                Công an xã Đức Hợp - Hưng Yên [cite: 1, 4]
+            </p>
+            <div class="inline-block bg-police-red px-8 py-4 rounded-lg font-bold text-lg shadow-2xl border-2 border-white">
+                HẠN CHÓT SƠ TUYỂN: 15/04/2026 [cite: 61]
+            </div>
+        </div>
+    </header>
 
-<div class="container animate__animated animate__fadeIn">
-    <h2><i class="fas fa-list-check"></i> 3 Phương thức tuyển sinh [cite: 9]</h2>
-    <div class="methods-grid">
-        <div class="method-card">
-            <h3>Phương thức 1</h3>
-            <p>Tuyển thẳng theo quy chế của Bộ GD&ĐT và Bộ Công an. [cite: 10]</p>
-        </div>
-        <div class="method-card">
-            <h3>Phương thức 2</h3>
-            <p>Xét tuyển kết hợp chứng chỉ ngoại ngữ quốc tế với học bạ và bài thi Bộ Công an. [cite: 11]</p>
-        </div>
-        <div class="method-card">
-            <h3>Phương thức 3</h3>
-            <p>Xét tuyển kết hợp điểm thi tốt nghiệp THPT với bài thi đánh giá của Bộ Công an. [cite: 12]</p>
-        </div>
-    </div>
+    <main class="max-w-6xl mx-auto px-6 py-12 space-y-20">
 
-    <h2><i class="fas fa-pen-to-square"></i> Cấu trúc bài thi đánh giá [cite: 14, 15]</h2>
-    <p>Tổng thời gian làm bài: <strong>180 phút</strong> (Thi viết). [cite: 17, 18]</p>
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Mã bài</th>
-                    <th>Tự luận</th>
-                    <th>Trắc nghiệm chung</th>
-                    <th>Trắc nghiệm tự chọn</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>CA1</strong></td>
-                    <td>Ngữ văn</td>
-                    <td>Toán, Sử, Tiếng Anh</td>
-                    <td>Vật lí [cite: 16]</td>
-                </tr>
-                <tr>
-                    <td><strong>CA2</strong></td>
-                    <td>Ngữ văn</td>
-                    <td>Toán, Sử, Tiếng Anh</td>
-                    <td>Hóa học [cite: 16]</td>
-                </tr>
-                <tr>
-                    <td><strong>CA3</strong></td>
-                    <td>Ngữ văn</td>
-                    <td>Toán, Sử, Tiếng Anh</td>
-                    <td>Sinh học [cite: 16]</td>
-                </tr>
-                <tr>
-                    <td><strong>CA4</strong></td>
-                    <td>Ngữ văn</td>
-                    <td>Toán, Sử, Tiếng Anh</td>
-                    <td>Địa lí [cite: 16]</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+        <section>
+            <div class="text-center mb-10">
+                <span class="bg-red-100 text-red-600 px-4 py-1 rounded-full text-sm font-bold uppercase">Lựa chọn</span>
+                <h2 class="text-3xl font-extrabold mt-2">03 Phương Thức Xét Tuyển [cite: 9]</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="method-card bg-white p-8 rounded-3xl border-b-8 border-red-500 shadow-xl">
+                    <div class="w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center font-black mb-6 text-xl">1</div>
+                    <h3 class="font-extrabold text-xl mb-4">Tuyển thẳng [cite: 10]</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm italic">Theo quy chế của Bộ GD&ĐT và quy định của Bộ Công an[cite: 10].</p>
+                </div>
+                <div class="method-card bg-white p-8 rounded-3xl border-b-8 border-blue-500 shadow-xl">
+                    <div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-black mb-6 text-xl">2</div>
+                    <h3 class="font-extrabold text-xl mb-4">Xét tuyển kết hợp [cite: 11]</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm italic">Chứng chỉ ngoại ngữ quốc tế + Học bạ THPT + Bài thi Bộ Công an[cite: 11].</p>
+                </div>
+                <div class="method-card bg-white p-8 rounded-3xl border-b-8 border-yellow-500 shadow-xl">
+                    <div class="w-12 h-12 bg-yellow-500 text-white rounded-full flex items-center justify-center font-black mb-6 text-xl">3</div>
+                    <h3 class="font-extrabold text-xl mb-4">Xét tuyển THPT [cite: 12]</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm italic">Kết quả thi tốt nghiệp THPT + Bài thi đánh giá của Bộ Công an[cite: 12, 13].</p>
+                </div>
+            </div>
+        </section>
 
-    <h2><i class="fas fa-heart-pulse"></i> Tiêu chuẩn Sức khỏe [cite: 39]</h2>
-    <div class="stats-grid">
-        <div class="stat-item">
-            <i class="fas fa-arrows-up-down"></i>
-            <h4>Chiều cao [cite: 40]</h4>
-            <p>Nam: 1m64 - 1m95<br>Nữ: 1m58 - 1m80</p>
-        </div>
-        <div class="stat-item">
-            <i class="fas fa-weight-scale"></i>
-            <h4>Chỉ số BMI [cite: 41]</h4>
-            <p>Đạt từ 18,5 đến 30</p>
-        </div>
-        <div class="stat-item">
-            <i class="fas fa-eye"></i>
-            <h4>Thị lực [cite: 42, 45]</h4>
-            <p>Không quá 3 đi-ốp.<br>Tổng 2 mắt đạt 19/10 (qua kính)</p>
-        </div>
-        <div class="stat-item">
-            <i class="fas fa-user-check"></i>
-            <h4>Học lực [cite: 34, 35]</h4>
-            <p>Đạt học lực Khá trở lên trong các năm THPT</p>
-        </div>
-    </div>
+        <section class="bg-police-red rounded-3xl p-10 text-white shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-white opacity-5 rounded-full"></div>
+            <h2 class="text-3xl font-extrabold mb-10 border-b-2 border-white/20 pb-4 uppercase">Tiêu chuẩn sức khỏe [cite: 39]</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="space-y-2">
+                    <p class="uppercase text-xs font-bold tracking-widest opacity-80 uppercase">Chiều cao [cite: 40]</p>
+                    <p class="text-2xl font-bold">Nam: 1m64 - 1m95 [cite: 40]</p>
+                    <p class="text-2xl font-bold">Nữ: 1m58 - 1m80 [cite: 40]</p>
+                </div>
+                <div class="space-y-2 border-l border-white/20 pl-6">
+                    <p class="uppercase text-xs font-bold tracking-widest opacity-80 uppercase">Thị lực [cite: 42]</p>
+                    <p class="text-lg leading-snug">Cận/Viễn: Không quá 3 diop mỗi mắt[cite: 43].</p>
+                    <p class="text-lg leading-snug">Loạn: Dưới 1 diop mỗi mắt[cite: 44].</p>
+                </div>
+                <div class="space-y-2 border-l border-white/20 pl-6">
+                    <p class="uppercase text-xs font-bold tracking-widest opacity-80 uppercase">Độ tuổi [cite: 24]</p>
+                    <p class="text-2xl font-bold">Thường trú: ≤ 22 tuổi [cite: 24]</p>
+                    <p class="text-sm italic">Người dân tộc thiểu số: ≤ 25 tuổi[cite: 24].</p>
+                </div>
+            </div>
+        </section>
 
-    <h2><i class="fas fa-address-card"></i> Thủ tục & Thời gian [cite: 60]</h2>
-    <ul>
-        <li><strong>Thời gian:</strong> Đến hết ngày <strong>15/4/2026</strong>. [cite: 61]</li>
-        <li><strong>Địa điểm:</strong> Trực tiếp tại Công an xã Đức Hợp (Thôn Nho Lâm). [cite: 61]</li>
-        <li><strong>Hồ sơ:</strong> Căn cước công dân, Học bạ, Bằng tốt nghiệp THPT (nếu có). [cite: 55]</li>
-    </ul>
+        <section class="space-y-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-police-blue uppercase">Bài thi đánh giá của Bộ Công an [cite: 14]</h2>
+                <p class="text-slate-500 mt-2 italic font-bold">Thí sinh chọn 01 trong 04 mã bài thi (Thời gian: 180 phút) [cite: 17, 19]</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-4 text-center">
+                <div class="bg-blue-900 text-white p-6 rounded-2xl">
+                    <p class="font-black text-3xl mb-2">CA1 </p>
+                    <p class="text-xs uppercase opacity-70 mb-4">Tự chọn: </p>
+                    <p class="font-bold text-xl py-2 bg-blue-800 rounded">VẬT LÍ </p>
+                </div>
+                <div class="bg-red-800 text-white p-6 rounded-2xl">
+                    <p class="font-black text-3xl mb-2">CA2 </p>
+                    <p class="text-xs uppercase opacity-70 mb-4">Tự chọn: </p>
+                    <p class="font-bold text-xl py-2 bg-red-700 rounded">HÓA HỌC </p>
+                </div>
+                <div class="bg-green-800 text-white p-6 rounded-2xl">
+                    <p class="font-black text-3xl mb-2">CA3 </p>
+                    <p class="text-xs uppercase opacity-70 mb-4">Tự chọn: </p>
+                    <p class="font-bold text-xl py-2 bg-green-700 rounded">SINH HỌC </p>
+                </div>
+                <div class="bg-orange-800 text-white p-6 rounded-2xl">
+                    <p class="font-black text-3xl mb-2">CA4 </p>
+                    <p class="text-xs uppercase opacity-70 mb-4">Tự chọn: </p>
+                    <p class="font-bold text-xl py-2 bg-orange-700 rounded">ĐỊA LÍ </p>
+                </div>
+            </div>
+            <div class="bg-slate-100 p-6 rounded-2xl text-center">
+                <p class="font-bold text-slate-700 uppercase">Phần bắt buộc cho tất cả mã bài: </p>
+                <p class="text-lg">Tự luận: Ngữ văn | Trắc nghiệm: Toán, Lịch sử, Ngôn ngữ Anh </p>
+            </div>
+        </section>
 
-    <div class="contact-box">
-        <h3><i class="fas fa-phone-volume"></i> Liên hệ hỗ trợ</h3>
-        <p>Mọi thắc mắc xin liên hệ Tổ Tổng hợp - <strong>Đồng chí Minh</strong></p>
-        <a href="tel:0967803823" class="btn-call"><i class="fas fa-phone"></i> Gọi ngay: 0967.803.823 [cite: 67]</a>
-    </div>
-</div>
+        <section class="grid md:grid-cols-2 gap-10">
+            <div class="bg-white p-10 rounded-3xl shadow-xl border-2 border-slate-100">
+                <h2 class="text-2xl font-black mb-6 text-police-blue uppercase underline decoration-yellow-400 decoration-4 underline-offset-8">Thủ tục đăng ký [cite: 52]</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 uppercase">Bước 1:</span>
+                        <span>Bản sao công chứng Học bạ[cite: 53].</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 uppercase">Bước 2:</span>
+                        <span>Bằng tốt nghiệp THPT (nếu có)[cite: 55].</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 uppercase">Bước 3:</span>
+                        <span>CCCD/Thẻ căn cước[cite: 55].</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-red-600 font-bold mr-3 uppercase">Bước 4:</span>
+                        <span>Quyết định xuất ngũ (đối với chiến sĩ hoàn thành nghĩa vụ)[cite: 56].</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-accent-yellow p-10 rounded-3xl shadow-xl">
+                <h2 class="text-2xl font-black mb-6 text-police-blue uppercase italic">Địa điểm tiếp nhận [cite: 48, 61]</h2>
+                <p class="font-bold text-lg mb-2">Công an xã Đức Hợp [cite: 61]</p>
+                <p class="text-police-blue/80 mb-6">Thôn Đức Trung, xã Đức Hợp, Kim Động, Hưng Yên [cite: 61]</p>
+                <div class="bg-white/40 p-6 rounded-2xl border-2 border-white">
+                    <p class="text-sm font-bold uppercase tracking-widest text-police-blue opacity-70">Liên hệ hướng dẫn [cite: 67]</p>
+                    <p class="text-3xl font-black text-police-red">0967.803.823 [cite: 67]</p>
+                    <p class="font-bold text-police-blue">(Đồng chí Minh - Tổ Tổng hợp) [cite: 67]</p>
+                </div>
+            </div>
+        </section>
 
-<footer>
-    <p>&copy; 2026 Công an xã Đức Hợp. Trang tin hướng dẫn tuyển sinh chính thức.</p>
-</footer>
+    </main>
+
+    <footer class="bg-police-blue text-white py-12 px-6 text-center border-t-8 border-yellow-400">
+        <p class="font-bold opacity-80 uppercase tracking-tighter mb-2 italic">Trực tiếp sơ tuyển tại Công an các xã, phường [cite: 50]</p>
+        <p class="text-xs opacity-50 uppercase">© 2026 Cổng thông tin Công an xã Đức Hợp - Phê duyệt bởi Trung tá Đặng Hồng Ngọc [cite: 1, 76, 78]</p>
+    </footer>
 
 </body>
 </html>
